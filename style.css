@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Italianno', cursive;
+    font-family: 'Karla', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    background-color: #8f0d15;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#overlay {
+    width: 85%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    top: 8%;
+}
+
+#overlay h1 {
+    font-family: "kajiro";
+    font-size: 130px;
+    font-weight: 300;
+    line-height: .6;
+}
+
+#parallex::-webkit-scrollbar {
+    display: none;
+}
+
+#parallex {
+    overflow-y: scroll;
+    height: 500px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#section-2 h2 {
+    border-bottom: 3px solid #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#section-2 #check {
+    display: none;
+}
+
+.content {
+    display: none;
+    transition: 0.5s linear;
+}
+
+#check:checked~.content {
+    display: block;
+}
+
+#check:checked~.chk {
+    visibility: hidden;
+}
+
+#check:checked~.chk::after {
+    content: "Show Less";
+    display: block;
+    visibility: visible;
+}
+
+#section-2 label {
+    display: inline-block;
+    margin-top: 5px;
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.div-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+#parallex .div-1:nth-child(1) {
+    background-image: url(tribute/ronaldo.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#parallex .div-1:nth-child(2) {
+    height: 80vh;
+    background-color: #8f0d15;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+
+
+#parallex .div-1:nth-child(3) {
+    height: 400px;
+    background-image: url(tribute/5th.jpg);
+    background-position: center 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-attachment: fixed;
+}
+
+#parallex .div-1:nth-child(4) {
+    background-color: rgb(0, 0, 0);
+    height: 80vh;
+}
+
+#section-3 p {
+    font-size: 100px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: "kajiro";
+    letter-spacing: 2px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+
+#points p::before {
+    content: "\26BD";
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+
+#points {
+    width: 80%;
+    margin: 50px;
+    line-height: 1;
+    text-align: left;
+}
+
+#points p {
+    font-size: 20px;
+}
+
+#points span {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#bg-img{
+    filter: drop-shadow(5px 5px 10px #8f0d15);
+}
+
+@media (max-width:900px) {
+    #overlay h1 {
+        font-family: "kajiro";
+        font-size: 70px;
+        font-weight: 100;
+        line-height: .6;
+    }
+
+    #overlay p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:500px) {
+    #overlay h1 {
+        font-family: "kajiro";
+        font-size: 50px;
+        font-weight: 100;
+        line-height: .6;
+    }
+
+    #overlay p {
+        font-size: 12px;
+    }
+}
